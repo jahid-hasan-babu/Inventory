@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Cotton Fabric",
+    "type": "Fabric",
+    "supplier": "ABC Textiles",
+    "quantity": 500,
+    "unitPrice": 2.5,
+    "totalPrice": 1250,
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 2,
+    "name": "Polyester Yarn",
+    "type": "Yarn",
+    "supplier": "Global Yarn Suppliers",
+    "quantity": 200,
+    "unitPrice": 1.8,
+    "totalPrice": 360,
+    "stockStatus": "Low Stock"
+  },
+  {
+    "id": 3,
+    "name": "Silk Fabric",
+    "type": "Fabric",
+    "supplier": "Luxury Fabrics Ltd.",
+    "quantity": 50,
+    "unitPrice": 10.0,
+    "totalPrice": 500,
+    "stockStatus": "Out of Stock"
+  },
+  {
+    "id": 4,
+    "name": "Nylon Zippers",
+    "type": "Accessory",
+    "supplier": "FastenZips Co.",
+    "quantity": 1000,
+    "unitPrice": 0.15,
+    "totalPrice": 150,
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 5,
+    "name": "Wool Yarn",
+    "type": "Yarn",
+    "supplier": "Quality Wool",
+    "quantity": 75,
+    "unitPrice": 3.0,
+    "totalPrice": 225,
+    "stockStatus": "Low Stock"
+  },
+  {
+    "id": 6,
+    "name": "Denim Fabric",
+    "type": "Fabric",
+    "supplier": "Denim Supply Inc.",
+    "quantity": 300,
+    "unitPrice": 5.5,
+    "totalPrice": 1650,
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 7,
+    "name": "Leather Straps",
+    "type": "Accessory",
+    "supplier": "LeatherWorks Ltd.",
+    "quantity": 50,
+    "unitPrice": 8.0,
+    "totalPrice": 400,
+    "stockStatus": "Out of Stock"
+  },
+  {
+    "id": 8,
+    "name": "Spandex Fabric",
+    "type": "Fabric",
+    "supplier": "Stretch Fabrics",
+    "quantity": 200,
+    "unitPrice": 4.0,
+    "totalPrice": 800,
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 9,
+    "name": "Buttons",
+    "type": "Accessory",
+    "supplier": "Button Factory",
+    "quantity": 2000,
+    "unitPrice": 0.05,
+    "totalPrice": 100,
+    "stockStatus": "In Stock"
+  },
+  {
+    "id": 10,
+    "name": "Velvet Fabric",
+    "type": "Fabric",
+    "supplier": "Premium Textiles",
+    "quantity": 120,
+    "unitPrice": 6.0,
+    "totalPrice": 720,
+    "stockStatus": "Low Stock"
+  }
+]

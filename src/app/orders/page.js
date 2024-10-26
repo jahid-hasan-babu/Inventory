@@ -14,7 +14,9 @@ import {
   Paper,
   TextField,
   Grid,
+  Button,
 } from "@mui/material";
+import Link from "next/link";
 
 const orderSummary = [
   { title: "Total Orders", count: 150, color: "bg-indigo-500" },
@@ -61,15 +63,32 @@ export default function OrdersPage() {
   };
 
   return (
-    <div className="py-4 space-y-4 ">
-      <TextField
-        variant="outlined"
-        fullWidth
-        label="Search Order by Buyer Name"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-      />
+    <div className="py-4 space-y-4">
+      <Grid container spacing={2} alignItems="center">
+        <Grid item xs={12} sm={9}>
+          {" "}
+          <TextField
+            variant="outlined"
+            fullWidth
+            label="Search Order by Buyer Name"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+          />
+        </Grid>
+        <Grid item xs={12} sm={3} className="text-right sm:text-left">
+          <Link href="/create-order" passHref>
+            <Button
+              variant="contained"
+              color="secondary"
+              className="rounded-md py-4 px-4 "
+              fullWidth
+            >
+              New Order
+            </Button>
+          </Link>
+        </Grid>
+      </Grid>
 
       <Grid container spacing={4}>
         {orderSummary.map((summary, index) => (
@@ -88,7 +107,6 @@ export default function OrdersPage() {
         ))}
       </Grid>
 
-      {/* Table view for larger screens */}
       <div className="hidden lg:block">
         <TableContainer component={Paper}>
           <Table>
@@ -152,7 +170,6 @@ export default function OrdersPage() {
         />
       </div>
 
-      {/* Card view for smaller screens */}
       <div className="lg:hidden space-y-4">
         {filteredData
           .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)

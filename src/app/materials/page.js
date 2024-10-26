@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+
 import {
   Card,
   CardContent,
@@ -14,6 +16,7 @@ import {
   Paper,
   TablePagination,
   TextField,
+  Button,
 } from "@mui/material";
 
 const materialsSummary = [
@@ -60,14 +63,31 @@ export default function Material() {
 
   return (
     <div className="py-4 space-y-4 ">
-      <TextField
-        variant="outlined"
-        fullWidth
-        label="Search by Material Name"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
-      />
+      <Grid container spacing={2} alignItems="center">
+        <Grid item xs={12} sm={9}>
+          {" "}
+          <TextField
+            variant="outlined"
+            fullWidth
+            label="Search by Material Name"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="rounded-full border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+          />
+        </Grid>
+        <Grid item xs={12} sm={3} className="text-right sm:text-left">
+          <Link href="/add-material" passHref>
+            <Button
+              variant="contained"
+              color="secondary"
+              className="rounded-md py-4 px-4 "
+              fullWidth
+            >
+              Add Material
+            </Button>
+          </Link>
+        </Grid>
+      </Grid>
 
       <Grid container spacing={4}>
         {materialsSummary.map((summary, index) => (

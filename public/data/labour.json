@@ -1,0 +1,222 @@
+[
+  {
+    "name": "John Doe",
+    "labourId": "L1001",
+    "position": "Helper",
+    "joiningDate": "2021-05-15",
+    "experienceYears": 3,
+    "salary": 25000,
+    "overtimeHours": 10,
+    "totalSalary": 26000,
+    "image": "https://example.com/images/john_doe.jpg"
+  },
+  {
+    "name": "Jane Smith",
+    "labourId": "L1002",
+    "position": "Helper",
+    "joiningDate": "2022-06-10",
+    "experienceYears": 2,
+    "salary": 24000,
+    "overtimeHours": 8,
+    "totalSalary": 24800,
+    "image": "https://example.com/images/jane_smith.jpg"
+  },
+  {
+    "name": "Alice Johnson",
+    "labourId": "L1003",
+    "position": "Junior Operator",
+    "joiningDate": "2020-03-22",
+    "experienceYears": 4,
+    "salary": 30000,
+    "overtimeHours": 12,
+    "totalSalary": 31200,
+    "image": "https://example.com/images/alice_johnson.jpg"
+  },
+  {
+    "name": "Bob Brown",
+    "labourId": "L1004",
+    "position": "Junior Operator",
+    "joiningDate": "2021-07-14",
+    "experienceYears": 3,
+    "salary": 28000,
+    "overtimeHours": 5,
+    "totalSalary": 28300,
+    "image": "https://example.com/images/bob_brown.jpg"
+  },
+  {
+    "name": "Charlie Black",
+    "labourId": "L1005",
+    "position": "Senior Operator",
+    "joiningDate": "2019-08-30",
+    "experienceYears": 5,
+    "salary": 35000,
+    "overtimeHours": 15,
+    "totalSalary": 36750,
+    "image": "https://example.com/images/charlie_black.jpg"
+  },
+  {
+    "name": "David White",
+    "labourId": "L1006",
+    "position": "Helper",
+    "joiningDate": "2022-01-11",
+    "experienceYears": 2,
+    "salary": 24500,
+    "overtimeHours": 7,
+    "totalSalary": 25000,
+    "image": "https://example.com/images/david_white.jpg"
+  },
+  {
+    "name": "Emily Green",
+    "labourId": "L1007",
+    "position": "Helper",
+    "joiningDate": "2021-12-05",
+    "experienceYears": 2,
+    "salary": 25500,
+    "overtimeHours": 9,
+    "totalSalary": 26300,
+    "image": "https://example.com/images/emily_green.jpg"
+  },
+  {
+    "name": "Frank Harris",
+    "labourId": "L1008",
+    "position": "Junior Operator",
+    "joiningDate": "2020-04-20",
+    "experienceYears": 4,
+    "salary": 29000,
+    "overtimeHours": 11,
+    "totalSalary": 30200,
+    "image": "https://example.com/images/frank_harris.jpg"
+  },
+  {
+    "name": "Grace Lee",
+    "labourId": "L1009",
+    "position": "Junior Operator",
+    "joiningDate": "2022-02-17",
+    "experienceYears": 2,
+    "salary": 31000,
+    "overtimeHours": 6,
+    "totalSalary": 31300,
+    "image": "https://example.com/images/grace_lee.jpg"
+  },
+  {
+    "name": "Henry King",
+    "labourId": "L1010",
+    "position": "Senior Operator",
+    "joiningDate": "2018-09-25",
+    "experienceYears": 6,
+    "salary": 36000,
+    "overtimeHours": 14,
+    "totalSalary": 37000,
+    "image": "https://example.com/images/henry_king.jpg"
+  },
+  {
+    "name": "Isla Scott",
+    "labourId": "L1011",
+    "position": "Helper",
+    "joiningDate": "2022-05-09",
+    "experienceYears": 2,
+    "salary": 24800,
+    "overtimeHours": 5,
+    "totalSalary": 25300,
+    "image": "https://example.com/images/isla_scott.jpg"
+  },
+  {
+    "name": "Jack Thompson",
+    "labourId": "L1012",
+    "position": "Helper",
+    "joiningDate": "2022-03-01",
+    "experienceYears": 2,
+    "salary": 25200,
+    "overtimeHours": 8,
+    "totalSalary": 26000,
+    "image": "https://example.com/images/jack_thompson.jpg"
+  },
+  {
+    "name": "Katherine Adams",
+    "labourId": "L1013",
+    "position": "Junior Operator",
+    "joiningDate": "2021-11-20",
+    "experienceYears": 3,
+    "salary": 29500,
+    "overtimeHours": 9,
+    "totalSalary": 30200,
+    "image": "https://example.com/images/katherine_adams.jpg"
+  },
+  {
+    "name": "Liam Martinez",
+    "labourId": "L1014",
+    "position": "Junior Operator",
+    "joiningDate": "2020-12-15",
+    "experienceYears": 3,
+    "salary": 27500,
+    "overtimeHours": 4,
+    "totalSalary": 27700,
+    "image": "https://example.com/images/liam_martinez.jpg"
+  },
+  {
+    "name": "Mia Robinson",
+    "labourId": "L1015",
+    "position": "Senior Operator",
+    "joiningDate": "2019-02-12",
+    "experienceYears": 5,
+    "salary": 37000,
+    "overtimeHours": 10,
+    "totalSalary": 37700,
+    "image": "https://example.com/images/mia_robinson.jpg"
+  },
+  {
+    "name": "Noah Walker",
+    "labourId": "L1016",
+    "position": "Helper",
+    "joiningDate": "2021-10-09",
+    "experienceYears": 3,
+    "salary": 24000,
+    "overtimeHours": 6,
+    "totalSalary": 24600,
+    "image": "https://example.com/images/noah_walker.jpg"
+  },
+  {
+    "name": "Olivia Hall",
+    "labourId": "L1017",
+    "position": "Junior Operator",
+    "joiningDate": "2022-01-22",
+    "experienceYears": 2,
+    "salary": 30500,
+    "overtimeHours": 7,
+    "totalSalary": 31000,
+    "image": "https://example.com/images/olivia_hall.jpg"
+  },
+  {
+    "name": "Paul Young",
+    "labourId": "L1018",
+    "position": "Senior Operator",
+    "joiningDate": "2018-04-18",
+    "experienceYears": 6,
+    "salary": 36000,
+    "overtimeHours": 12,
+    "totalSalary": 37200,
+    "image": "https://example.com/images/paul_young.jpg"
+  },
+  {
+    "name": "Quinn Lewis",
+    "labourId": "L1019",
+    "position": "Junior Operator",
+    "joiningDate": "2020-08-25",
+    "experienceYears": 4,
+    "salary": 30000,
+    "overtimeHours": 10,
+    "totalSalary": 31000,
+    "image": "https://example.com/images/quinn_lewis.jpg"
+  },
+  {
+    "name": "Riley Robinson",
+    "labourId": "L1020",
+    "position": "Senior Operator",
+    "joiningDate": "2017-11-30",
+    "experienceYears": 7,
+    "salary": 40000,
+    "overtimeHours": 15,
+    "totalSalary": 41500,
+    "image": "https://example.com/images/riley_robinson.jpg"
+  }
+]

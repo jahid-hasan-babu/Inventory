@@ -77,7 +77,7 @@ export default function OrdersPage() {
           />
         </Grid>
         <Grid item xs={12} sm={3} className="text-right sm:text-left">
-          <Link href="/create-order" passHref>
+          <Link href="/orders/create-order" passHref>
             <Button
               variant="contained"
               color="secondary"

@@ -16,12 +16,15 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SettingsIcon from "@mui/icons-material/Settings";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import PersonIcon from "@mui/icons-material/Person";
 
 const menuItems = [
   { text: "Home", icon: <DashboardIcon />, link: "/" },
   { text: "Inventory", icon: <InventoryIcon />, link: "/inventory" },
   { text: "Orders", icon: <ShoppingCartIcon />, link: "/orders" },
   { text: "Material", icon: <SettingsIcon />, link: "/materials" },
+  { text: "Employee", icon: <PersonIcon />, link: "/employee" },
+  { text: "Labour", icon: <PersonIcon />, link: "/labour" },
 ];
 
 export default function Sidebar() {
@@ -67,7 +70,7 @@ export default function Sidebar() {
     <div>
       <IconButton
         onClick={toggleDrawer}
-        className="text-black fixed top-7 left-4 z-50 md:hidden"
+        className="text-black bg-white  fixed top-7 left-4 z-50 md:hidden"
       >
         <MenuIcon />
       </IconButton>

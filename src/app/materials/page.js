@@ -76,7 +76,7 @@ export default function Material() {
           />
         </Grid>
         <Grid item xs={12} sm={3} className="text-right sm:text-left">
-          <Link href="/add-material" passHref>
+          <Link href="/materials/add-material" passHref>
             <Button
               variant="contained"
               color="secondary"

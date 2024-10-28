@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import {
   Grid,
   TextField,
@@ -12,11 +12,9 @@ import { ToastContainer, toast } from "react-toastify";
 import dayjs from "dayjs";
 import { useRouter, useSearchParams } from "next/navigation";
 
-export default function AttendancePage() {
+const AttendancePageContent = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const [id, setId] = useState("");
-
   const [employeeId, setEmployeeId] = useState("");
   const [employeeName, setEmployeeName] = useState("");
   const [employeePosition, setEmployeePosition] = useState("");
@@ -24,7 +22,6 @@ export default function AttendancePage() {
   const [date, setDate] = useState("");
   const [inTime, setInTime] = useState("");
   const [outTime, setOutTime] = useState("");
-
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 10;
 
@@ -44,7 +41,6 @@ export default function AttendancePage() {
 
     const empId = searchParams.get("id");
     if (empId) {
-      setId(empId);
       fetchData(empId);
     }
   }, [searchParams]);
@@ -109,13 +105,9 @@ export default function AttendancePage() {
       JSON.stringify(updatedAttendanceData)
     );
 
-    setEmployeeId("");
-    setEmployeeName("");
-    setEmployeePosition("");
     setDate("");
     setInTime("");
     setOutTime("");
-
     toast.success("Attendance recorded successfully!");
   };
 
@@ -149,7 +141,6 @@ export default function AttendancePage() {
               variant="outlined"
               fullWidth
               value={employeeId}
-              onChange={(e) => setEmployeeId(e.target.value)}
               disabled
             />
           </Grid>
@@ -159,7 +150,6 @@ export default function AttendancePage() {
               variant="outlined"
               fullWidth
               value={employeeName}
-              onChange={(e) => setEmployeeName(e.target.value)}
               disabled
             />
           </Grid>
@@ -169,7 +159,6 @@ export default function AttendancePage() {
               variant="outlined"
               fullWidth
               value={employeePosition}
-              onChange={(e) => setEmployeePosition(e.target.value)}
               disabled
             />
           </Grid>
@@ -262,5 +251,13 @@ export default function AttendancePage() {
         )}
       </Paper>
     </div>
+  );
+};
+
+export default function AttendancePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AttendancePageContent />
+    </Suspense>
   );
 }

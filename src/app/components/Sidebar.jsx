@@ -14,6 +14,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SettingsIcon from "@mui/icons-material/Settings";
+import EventNoteIcon from "@mui/icons-material/EventNote";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import PersonIcon from "@mui/icons-material/Person";
@@ -23,6 +24,7 @@ const menuItems = [
   { text: "Inventory", icon: <InventoryIcon />, link: "/inventory" },
   { text: "Orders", icon: <ShoppingCartIcon />, link: "/orders" },
   { text: "Material", icon: <SettingsIcon />, link: "/materials" },
+  { text: "Attendance", icon: <EventNoteIcon />, link: "/attendance" },
   { text: "Employee", icon: <PersonIcon />, link: "/employee" },
   { text: "Labour", icon: <PersonIcon />, link: "/labour" },
 ];

@@ -1,11 +1,9 @@
-import Hero from "./home/Hero";
-import KeyAction from "./home/KeyAction";
+import GarmentsDetailsPage from "./home/GarmentsDetailsPage";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <KeyAction />
+      <GarmentsDetailsPage />
     </>
   );
 }

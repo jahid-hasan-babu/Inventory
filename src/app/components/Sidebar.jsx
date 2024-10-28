@@ -1,4 +1,5 @@
-"use client";
+"use client"; // Ensure this component is treated as a client component
+
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -72,13 +73,13 @@ export default function Sidebar() {
     <div>
       <IconButton
         onClick={toggleDrawer}
-        className="text-black bg-white  fixed top-7 left-4 z-50 md:hidden"
+        className="text-black bg-white fixed top-7 left-4 z-50 md:hidden"
       >
         <MenuIcon />
       </IconButton>
 
       <aside className="hidden md:flex">
-        <div className="w-64 text-white  h-screen">{drawerContent}</div>
+        <div className="w-64 text-white h-screen">{drawerContent}</div>
       </aside>
 
       <Drawer
@@ -88,6 +89,12 @@ export default function Sidebar() {
         className="md:hidden"
         ModalProps={{
           keepMounted: true,
+        }}
+        sx={{
+          "& .MuiDrawer-paper": {
+            width: "240px",
+            boxSizing: "border-box",
+          },
         }}
       >
         {drawerContent}

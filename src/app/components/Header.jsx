@@ -1,4 +1,3 @@
-// app/dashboard/Header.js
 import { Avatar, IconButton } from "@mui/material";
 import LogoutIcon from "@mui/icons-material/Logout";
 import Image from "next/image";
